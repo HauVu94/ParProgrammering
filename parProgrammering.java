@@ -16,8 +16,20 @@ public class parProgrammering {
             return romanNumberOne;
         }
         return null;
-
     }
 
+    @Test
+    void ConvertSecondNumber(){
+        int regularNumber = 2;
+        assertEquals("ii", convertNumeralTwoToRomanValue(regularNumber));
+    }
+
+    String convertNumeralTwoToRomanValue(int numberTwo){
+        String romanNumberTwo = "ii";
+        if (numberTwo == 2) {
+            return romanNumberTwo;
+        }
+        return null;
+    }
 }
 
