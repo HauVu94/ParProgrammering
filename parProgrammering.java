@@ -9,16 +9,14 @@ public class parProgrammering {
 
     @Test
       void program() {
-        int regularNumber = 8;
+        int regularNumber = 1;
         assertTrue(checkFirstNumber(regularNumber));
     }
 
     boolean checkFirstNumber(int i){
         String romanNumberOne = "i";
-        if(i == 1){
-            return true;
-        }
-        return false;
+        return i == 1;
     }
+
 }
 
