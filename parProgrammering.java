@@ -8,22 +8,17 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class parProgrammering {
 
     @Test
-      void program(){
-        int regularNumber = 1;
-        assertTrue(formatToRomanNumber(regularNumber));
-    }
-    boolean formatToRomanNumber(int formatNumber){
-        return true;
+      void program() {
+        int regularNumber = 8;
+        assertTrue(checkFirstNumber(regularNumber));
     }
 
-    boolean checkFirstRomanNumber(int firstRomanNumber){
-      return firstRomanNumber == 1;
+    boolean checkFirstNumber(int i){
+        String romanNumberOne = "i";
+        if(i == 1){
+            return true;
+        }
+        return false;
     }
-    @Test
-    void toRomanNumber(){
-        int firstNumber = 20;
-       assertTrue(checkFirstRomanNumber(firstNumber));
-    }
-
 }
 
