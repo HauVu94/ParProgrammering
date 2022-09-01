@@ -21,8 +21,8 @@ public class parProgrammering {
     }
     @Test
     void toRomanNumber(){
-        int firstNumber = 10;
-       assertFalse(formatToRomanNumber(firstNumber));
+        int firstNumber = 20;
+       assertTrue(checkFirstRomanNumber(firstNumber));
     }
 
 }
