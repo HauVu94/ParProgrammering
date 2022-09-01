@@ -1,21 +1,22 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class parProgrammering {
 
     @Test
       void program() {
         int regularNumber = 1;
-        assertTrue(checkFirstNumber(regularNumber));
+        assertEquals("i",convertNumeralOneToRomanValue(regularNumber));
     }
 
-    boolean checkFirstNumber(int i){
+    String convertNumeralOneToRomanValue(int numberOne){
         String romanNumberOne = "i";
-        return i == 1;
+        if(numberOne == 1){
+            return romanNumberOne;
+        }
+        return null;
+
     }
 
 }
