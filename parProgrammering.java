@@ -6,6 +6,10 @@ public class parProgrammering {
       void program(){
 
     }
+    @Test
+    void program2(){
+
+    }
 
 }
 
