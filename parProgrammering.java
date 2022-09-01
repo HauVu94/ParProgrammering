@@ -31,5 +31,18 @@ public class parProgrammering {
         }
         return null;
     }
+    @Test
+    void convertThirdNumber(){
+        int regularNumber = 4;
+        assertEquals("iii", convertNumeralThreeToRomanValue(regularNumber));
+
+    }
+    String convertNumeralThreeToRomanValue(int numberThree){
+        String romanNumberThree = "iii";
+        if(numberThree == 3){
+            return romanNumberThree;
+        }
+        return null;
+    }
 }
 
