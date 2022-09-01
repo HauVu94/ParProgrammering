@@ -14,7 +14,7 @@ public class parProgrammering {
 
 
     }
-    boolean formatToRomanNumber(int i){
+    boolean formatToRomanNumber(int formatNumber){
         return true;
     }
 
