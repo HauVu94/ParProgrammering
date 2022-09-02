@@ -100,83 +100,77 @@ public class parProgrammering {
 
     String convertNumeralToRomanValue(int number){
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
-        String romanNumberThousand = "m";
         if (number == 1000){
-            result += "m";
+            result.append("m");
             number -= 1000;
         }
 
-        String romanNumberNineHundred = "cm";
+
         if (number == 900){
-            result += "cm";
+            result.append("cm");
             number -= 900;
         }
 
-        String romanNumberFiveHundred = "d";
         if (number == 500){
-            result += "d";
+            result.append("d");
             number -= 500;
         }
 
-        String romanNumberFourHundred = "cd";
         if (number == 400){
-            result += "cd";
+            result.append("cd");
             number -= 400;
         }
 
-        String romanNumberHunndred = "c";
         if (number == 100){
-            result += "c";
+            result.append("c");
             number -= 100;
         }
 
-        String romanNumberNinety = "xc";
+
         if (number == 90){
-            result += "xc";
+            result.append("xc");
             number -= 90;
         }
 
-        String romanNumberFifty = "l";
         if (number == 50){
-            result += "l";
+            result.append("l");
             number -= 50;
         }
 
-        String romanNumberFourty = "xl";
         if(number == 40){
-            result += "xl";
+            result.append("xl");
             number -= 40;
         }
 
         if(number == 10){
-            result += "x";
+            result.append("x");
             number -= 10;
         }
 
         if(number == 9){
-            result += "ix";
+            result.append("ix");
             number -= 9;
         }
 
         if(number >= 5){
-            result += "v";
+            result.append("v");
             number -= 5;
         }
 
         if(number >= 4){
-            result += "iv";
+            result.append("iv");
             number -= 4;
 
         }
 
         // denne while vil hente alle tall fra 1-3
         while (number > 0){  // så lenge tall er større enn 0 skriv ut "i" også ta vekk tallet 1.
-            result += "i"; // legge til + "i" hver gang
+            result.append("i"); // legge til + "i" hver gang
             number -= 1;
         }
-        return result; // skriv ut resultatet
+        return result.toString(); // skriv ut resultatet
 
 
         // gjøre denne opp til sjekk 1-3.
