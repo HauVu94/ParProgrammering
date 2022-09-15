@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class parProgrammering {
+public class couplePrograming {
 
     @Test
       void ConvertNumberOne() {
@@ -107,62 +107,49 @@ public class parProgrammering {
             number -= 1000;
         }
 
-
-        if (number == 900){
+        else if (number == 900){
             result.append("cm");
             number -= 900;
         }
-
         if (number == 500){
             result.append("d");
             number -= 500;
         }
-
         if (number == 400){
             result.append("cd");
             number -= 400;
         }
-
         if (number == 100){
             result.append("c");
             number -= 100;
         }
-
-
         if (number == 90){
             result.append("xc");
             number -= 90;
         }
-
         if (number == 50){
             result.append("l");
             number -= 50;
         }
-
         if(number == 40){
             result.append("xl");
             number -= 40;
         }
-
         if(number == 10){
             result.append("x");
             number -= 10;
         }
-
         if(number == 9){
             result.append("ix");
             number -= 9;
         }
-
         if(number >= 5){
             result.append("v");
             number -= 5;
         }
-
         if(number >= 4){
             result.append("iv");
             number -= 4;
-
         }
 
         // denne while vil hente alle tall fra 1-3
