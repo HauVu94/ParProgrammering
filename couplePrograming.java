@@ -102,55 +102,58 @@ public class couplePrograming {
 
         StringBuilder result = new StringBuilder();
 
-        if (number == 1000){
-            result.append("m");
-            number -= 1000;
+        switch (number) {
+            case 1000 -> {
+                result.append("m");
+                number -= 1000;
+            }
+            case 900 -> {
+                result.append("cm");
+                number -= 900;
+            }
+            case 500 -> {
+                result.append("d");
+                number -= 500;
+            }
+            case 400 -> {
+                result.append("cd");
+                number -= 400;
+            }
+            case 100 -> {
+                result.append("c");
+                number -= 100;
+            }
+            case 90 -> {
+                result.append("xc");
+                number -= 90;
+            }
+            case 50 -> {
+                result.append("l");
+                number -= 50;
+            }
+            case 40 -> {
+                result.append("xl");
+                number -= 40;
+            }
+            case 10 -> {
+                result.append("x");
+                number -= 10;
+            }
+            case 9 -> {
+                result.append("ix");
+                number -= 9;
+            }
+
+            case 5 -> {
+                result.append("v");
+                number -= 5;
+            }
+            case 4 -> {
+                result.append("iv");
+                number -= 4;
+            }
         }
 
-        else if (number == 900){
-            result.append("cm");
-            number -= 900;
-        }
-        if (number == 500){
-            result.append("d");
-            number -= 500;
-        }
-        if (number == 400){
-            result.append("cd");
-            number -= 400;
-        }
-        if (number == 100){
-            result.append("c");
-            number -= 100;
-        }
-        if (number == 90){
-            result.append("xc");
-            number -= 90;
-        }
-        if (number == 50){
-            result.append("l");
-            number -= 50;
-        }
-        if(number == 40){
-            result.append("xl");
-            number -= 40;
-        }
-        if(number == 10){
-            result.append("x");
-            number -= 10;
-        }
-        if(number == 9){
-            result.append("ix");
-            number -= 9;
-        }
-        if(number >= 5){
-            result.append("v");
-            number -= 5;
-        }
-        if(number >= 4){
-            result.append("iv");
-            number -= 4;
-        }
 
         // denne while vil hente alle tall fra 1-3
         while (number > 0){  // så lenge tall er større enn 0 skriv ut "i" også ta vekk tallet 1.
